@@ -1,24 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W38-eo-d11">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N1B-Rr-nBL">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instruction connect to TV" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZST-bC-eca">
+                                                <rect key="frame" x="75" y="-13" width="242" height="54"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="54" id="GdS-XN-p2L"/>
+                                                    <constraint firstAttribute="width" constant="242" id="xN3-cL-71Y"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bdf-qH-dEN">
+                                                <rect key="frame" x="19" y="65" width="355" height="686"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="355" id="2WY-yN-ycD"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <constraints>
+                                            <constraint firstItem="bdf-qH-dEN" firstAttribute="top" secondItem="ZST-bC-eca" secondAttribute="bottom" constant="24" id="DpS-M9-Uit"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZST-bC-eca" secondAttribute="trailing" constant="76" id="d4k-IB-wD3"/>
+                                            <constraint firstItem="ZST-bC-eca" firstAttribute="top" secondItem="N1B-Rr-nBL" secondAttribute="top" constant="-13" id="gG3-Od-QWO"/>
+                                            <constraint firstItem="bdf-qH-dEN" firstAttribute="leading" secondItem="N1B-Rr-nBL" secondAttribute="leading" constant="19" id="kc1-BA-cME"/>
+                                            <constraint firstAttribute="trailing" secondItem="bdf-qH-dEN" secondAttribute="trailing" constant="19" id="lK2-Le-OA0"/>
+                                            <constraint firstItem="ZST-bC-eca" firstAttribute="leading" secondItem="N1B-Rr-nBL" secondAttribute="leading" constant="75" id="thm-4K-rpc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="N1B-Rr-nBL" firstAttribute="height" secondItem="W38-eo-d11" secondAttribute="height" priority="250" id="66l-nZ-fGN"/>
+                                    <constraint firstItem="N1B-Rr-nBL" firstAttribute="leading" secondItem="W38-eo-d11" secondAttribute="leading" id="90N-eY-UQ0"/>
+                                    <constraint firstItem="N1B-Rr-nBL" firstAttribute="width" secondItem="W38-eo-d11" secondAttribute="width" id="H5m-Gm-GYG"/>
+                                    <constraint firstItem="N1B-Rr-nBL" firstAttribute="top" secondItem="W38-eo-d11" secondAttribute="top" id="aVr-VJ-g1U"/>
+                                    <constraint firstAttribute="bottom" secondItem="N1B-Rr-nBL" secondAttribute="bottom" id="adT-26-m5U"/>
+                                    <constraint firstAttribute="trailing" secondItem="N1B-Rr-nBL" secondAttribute="trailing" id="c3d-F2-0TN"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="W38-eo-d11" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="07I-wy-3Nc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W38-eo-d11" secondAttribute="trailing" id="KBe-oZ-yH6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="W38-eo-d11" secondAttribute="bottom" id="Z3h-vl-DkF"/>
+                            <constraint firstItem="W38-eo-d11" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="mkH-dA-Inp"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainStackView" destination="bdf-qH-dEN" id="Rs4-KE-aje"/>
+                        <outlet property="scrollView" destination="W38-eo-d11" id="XVJ-bl-4vg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-11.450381679389313" y="-27.464788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

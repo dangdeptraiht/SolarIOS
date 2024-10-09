@@ -1,0 +1,32 @@
+[
+    {
+        "category": "How to connect your TV",
+        "contents": [
+            {
+                "title": "Same Wifi for both devices",
+                "description": "Make sure your device is connected to the same Wifi network as your TV in order to connect through wifi. Check or modify the connection settings on your phone or TV"
+            },
+            {
+                "title": "How to connect",
+                "description": "Open the scanning for devices section of the app and choose your device. Follow the instructions on your phone and TV to complete the pairing. You may use your phone as a remote after pairing."
+            }
+        ]
+    },
+    {
+        "category": "FAQs",
+        "contents": [
+            {
+                "title": "Can't find my smart TV",
+                "description": "- Make sure your phone and TV are connected to the same wifi network - If your  TV device can't be found, please reboot(power reset) it and try again!!! - Restart TV remote app/ Restart your router"
+            },
+            {
+                "title": "Pin code not appearing on my Sony TV ?",
+                "description": "Enabling the renderer function. By enabling the render function, a mobile device(e.g. smartphone) can work as the TV's remote via the home network: -  Step1: Press the home button, then select [Settings]. -  Step2: Select [network] -> [Home network setup] -> [IP control] -> Select [Pre - Shared Key]"
+            },
+            {
+                "title": "Power, Volume, Channel, Arrow Pad keys are not working but Youtobe key works fine ?",
+                "description": "Setting -> Force Mode, turn on/off and try again. We get some feedbacks from users, this app is not working on some series of BRAVIA(eg. KD-, KDL)"
+            }
+        ]
+    }
+]
